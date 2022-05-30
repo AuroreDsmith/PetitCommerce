@@ -1,0 +1,637 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&family=Montserrat&family=Oswald:wght@200;300;400&family=Rokkitt&display=swap");
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Rokkitt', serif;
+*/
+
+/******************/
+/**** GENERAL *****/
+/******************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  /* height: 100%; */
+  font-family: "Oswald", sans-serif;
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+i {
+  color: #737373;
+}
+i:hover {
+  color: #c5b684;
+}
+
+.bouton {
+  background-color: #c5b684;
+  color: #fff;
+  transition: ease-in-out 0.4s;
+}
+.bouton:hover {
+  background-color: #a08656;
+  color: #fff;
+}
+.bouton4 {
+  border: 1px solid rgba(115, 115, 115, 0.4);
+  transition: ease-in-out 0.4s;
+}
+
+.bouton5 {
+  background-color: #fff;
+  border: #737373;
+  border-radius: 5px;
+  width: 15rem;
+  padding: 0.5rem;
+}
+
+/* INTRO PAGES */
+.container-texte-intro {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 10vh;
+  width: 50vw;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+}
+.container-texte-intro h2 {
+  line-height: 10vh;
+}
+
+
+/* IMAGES DES PAGES POUR RESPONSIVE */
+.image-page-container {
+  height: 350px;
+}
+.image-page-container img {
+  height: 100%;
+}
+
+/* Soulignement texte */
+.underline {
+  text-decoration: underline;
+}
+
+.couleur-lien,
+.prix {
+  color: #c5b684;
+}
+.couleur-lien:hover,
+.couleur-lien:active {
+  font-weight: bold;
+  color: #c5b684;
+}
+
+.couleur-lien2 {
+  color: #343a40;
+  text-decoration: underline;
+}
+.couleur-lien2:hover,
+.couleur-lien2:active {
+  color: #c5b684;
+}
+.couleur-lien2 i {
+  color: #c5b684;
+}
+
+
+
+/******************/
+/*** MENU ICONE ***/
+/******************/
+.menu_icones i {
+  margin: 0 1rem;
+}
+#drapeau {
+  cursor: pointer;
+}
+
+/**********************/
+/*** MAIN CAROUSEL ****/
+/*********************/
+.carousel,
+.carousel-item,
+.carousel-item.active {
+  height: 85vh;
+}
+.carousel-inner,
+.view {
+  height: 100%;
+}
+
+.carousel-caption {
+  top: 50%;
+  /* transform: translateY(-50%); */
+  bottom: initial;
+}
+
+
+.carousel-item:nth-child(1) {
+  background-image: url("../img/woman-desert.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(2) {
+  background-image: url("../img/main_page_homme_cropped.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(3) {
+  background-image: url("../img/main_page_femme_1920px.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* video {
+  height: 100%;
+width: 100%;
+} */
+
+/**********************/
+/*** MAIN BIENVENU ****/
+/*********************/
+.bienvenue {
+  height: 100vh;
+  background-image: url(../img/cotton2.jpg);
+  background-position: left 10% top 10%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* Opacité sur l'image de fond mais pas sur le texte */
+.bienvenue:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/***************************/
+/*** MAIN INFORMATIONS ****/
+/**************************/
+.informations h5 {
+  color: #c5b684;
+}
+
+/***************************/
+/**** MAIN AVIS CLIENT ****/
+/**************************/
+.avis-client {
+  height: 100vh;
+  background-image: url(../img/fabrics.jfif);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* Opacité sur l'image de fond mais pas sur le texte */
+.avis-client:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+/*****************************/
+/***** PAGES GENERALES *******/
+/****************************/
+.bg-img-contact,
+.bg-img-about,
+.bg-img-point_vente,
+.bg-img-evenement,
+.bg-img-presse,
+.bg-img-reservation,
+.bg-img-recrutement,
+.bg-img-actualites,
+.bg-img-panier,
+.bg-img-compte,
+.bg-img-mentions-legales,
+.bg-img-mentions-confidentialité,
+.bg-img-cgv,
+.bg-img-plan-site,
+.bg-img-favoris,
+.bg-img-avis {
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/**********************/
+/***** CONTACT *******/
+/*********************/
+.bg-img-contact {
+  background-image: url(../img/bg-contact2.jfif);
+  background-position: bottom;
+}
+
+/**********************/
+/***** ABOUT *******/
+/*********************/
+.bg-img-about {
+  background-image: url(../img/bg-forest.jfif);
+  background-position: middle;
+}
+
+/****************************/
+/*****POINT DE VENTE *******/
+/***************************/
+.bg-img-point_vente {
+  background-image: url(../img/bg-travel.jpeg);
+  background-position: bottom;
+}
+
+/****************************/
+/******** EVENEMENTS *******/
+/***************************/
+.bg-img-evenement {
+  background-image: url(../img/bg-event2.jpg);
+  background-position: center;
+}
+
+/****************************/
+/******** PRESSE ************/
+/***************************/
+.bg-img-presse {
+  background-image: url(../img/bg-press.jpg);
+  background-position: bottom;
+}
+
+/****************************/
+/******** RESERVATION *******/
+/***************************/
+.bg-img-reservation {
+  background-image: url(../img/happy-woman-shopper.jpg);
+  background-position: top 50%;
+}
+
+/****************************/
+/******** RECRUTEMENT *******/
+/***************************/
+.bg-img-recrutement {
+  background-image: url(../img/team.jpeg);
+  background-position: center;
+}
+
+/****************************/
+/******** ACTUALITES *******/
+/***************************/
+.bg-img-actualites {
+  background-image: url(../img/bg-actualités.jfif);
+  background-position: left 10% top 30%;
+}
+
+/****************************/
+/********** PANIER *********/
+/***************************/
+.bg-img-panier {
+  background-image: url(../img/shopping-box.jfif);
+  background-position: left 10% top 30%;
+}
+
+/* photo panier */
+.panier-photo {
+  height: 10px;
+}
+
+/****************************/
+/******** MON COMPTE ********/
+/***************************/
+.bg-img-compte {
+  background-image: url(../img/cotton.jpg);
+  background-position: left 10% top 50%;
+}
+
+/* En-tête du tableau */
+.thead {
+  background-color: #c5b684;
+  color: #f8f9fa;
+}
+
+/* table {
+  width: 100%;
+  table-layout: fixed;
+} */
+
+.table-responsive-stack tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+
+.table-responsive-stack td,
+.table-responsive-stack th {
+   display:block;
+/*      
+   flex-grow | flex-shrink | flex-basis   */
+   -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+/****************************/
+/********** FAVORIS ********/
+/***************************/
+.bg-img-favoris {
+  background-image: url(../img/favoris.jfif);
+  background-position: left 10% top 80%;
+}
+
+/****************************/
+/********** AVIS ********/
+/***************************/
+.bg-img-avis {
+  background-image: url(../img/fabrics.jfif);
+  background-position: left 10% top 80%;
+}
+
+/* Système de notation en étoiles */
+
+.rate {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.rate input {
+  display: none;
+}
+
+.rate label {
+  float: right;
+  font-size: 0;
+  color: #d9d9d9;
+}
+
+.rate label:before {
+  content: "\f005";
+  font-family: FontAwesome;
+  font-size: 40px;
+}
+
+.rate label:hover,
+.rate label:hover ~ label {
+  color: #f6c82c;
+  transition: 0.2s;
+}
+
+.rate input:checked ~ label {
+  color: #f6c82c;
+}
+
+.rate input:checked ~ label:hover,
+.rate input:checked ~ label:hover ~ label {
+  color: #ffed85;
+  transition: 0.2s;
+}
+
+/****************************/
+/**** MENTIONS LEGALES ******/
+/***************************/
+.bg-img-mentions-legales {
+  background-image: url(../img/mentions-legales.jfif);
+  background-position: left 10% top 30%;
+}
+
+/****************************************/
+/**** POLITIQUE DE CONFIDENTIALITE ******/
+/****************************************/
+.bg-img-mentions-confidentialité {
+  background-image: url(../img/confidentialite.jfif);
+  background-position: left 10% top 30%;
+}
+
+/****************/
+/**** CGV ******/
+/***************/
+.bg-img-cgv {
+  background-image: url(../img/vente.jfif);
+  background-position: left 10% top 30%;
+}
+
+/****************************************/
+/************** PLAN DU SITE ************/
+/****************************************/
+.bg-img-plan-site {
+  background-image: url(../img/network.jfif);
+  background-position: left 10% top 30%;
+}
+
+.puce-liste {
+  list-style-type: none;
+}
+.puce-liste a, .puce-liste li {
+  color: #737373;
+}
+
+/**********************/
+/***** FORMULAIRE ****/
+/*********************/
+/* Couleur outline des input */
+.form-control:focus {
+  border-color: #c5b684;
+  /* box-shadow: 0px 1px 1px rgba(115, 115, 115, 0.075) inset, 0px 0px 8px rgb(160, 134, 86, 0.5); */
+  box-shadow: 0px 1px 1px rgba(138, 138, 138, 0.075) inset, 0px 0px 8px rgba(230, 202, 111, 0.7);
+}
+
+/**********************/
+/******* FOOTER ******/
+/*********************/
+.site-footer {
+  /* background-color: #26272b; */
+  background-color: #c5b684;
+  padding: 45px 0 20px;
+  line-height: 24px;
+  color: #737373;
+}
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+.site-footer hr.small {
+  margin: 20px 0;
+}
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+.site-footer a {
+  color: #737373;
+}
+.site-footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links li {
+  display: block;
+}
+.footer-links a {
+  color: #737373;
+}
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.site-footer .social-icons {
+  text-align: right;
+}
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.social-icons a {
+  background-color: #fff;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+  color: black;
+}
+.social-icons a.twitter:hover {
+  background-color: #1da1f2;
+}
+.social-icons a.linkedin:hover {
+  background-color: #007bb5;
+}
+.social-icons a.instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.fas.fa-print:hover {
+  color: #fff;
+}
+
+/****************************/
+/******* MEDIA QUERIES ******/
+/***************************/
+
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
+  }
+  .image-page-container {
+    height: auto;
+  }
+  .image-page-container img {
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .table-responsive-stack tr {
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     border-bottom: 3px solid #ccc;
+     display:block;
+  }
+
+  .container-texte-intro {
+    position: relative;
+    top: 35%;
+    height: auto;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+  }
+  .container-texte-intro h2 {
+    line-height: 10vh;
+  }
+
+  .image-page-container iframe {
+    width: auto;
+  }
+
+  .bienvenue h3 {
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
+
